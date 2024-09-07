@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#home" class="home-logo"><img src="./image/home.png"></a>
+        <button class="toggle-button" onclick="toggleMenu()">
+            <img src="./image/menu.png" alt="Menu" class="menu-icon">
+        </button>
+        <ul id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="./Products.html">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="discription">
+
+            <h1>Country gurl</h1>
+
+            <p>
+                Description : Eyes have a language of their own
+                <br>
+                Dimensions : 50x60
+                <br>
+                Background Material : wood
+                <br>
+                Color Type : oil colors
+            </p>
+        </div>
+
+        <div id="gallery" class="image-gallery">
+            <div class="thumbnails">
+                <img src="https://iili.io/HnylIxj.jpg" alt="Thumbnail 1" class="selected"
+                    onclick="changeImage('https://iili.io/HnylIxj.jpg', this)">
+                <img src="https://iili.io/HnyloOu.jpg" alt="Thumbnail 2"
+                    onclick="changeImage('https://iili.io/HnyloOu.jpg', this)">
+                <img src="https://iili.io/HnylTWx.jpg" alt="Thumbnail 3"
+                    onclick="changeImage('https://iili.io/HnylTWx.jpg', this)">
+                <img src="https://iili.io/HnylxDb.jpg" alt="Thumbnail 4"
+                    onclick="changeImage('https://iili.io/HnylxDb.jpg', this)">
+            </div>
+            <img id="main-image" src="https://iili.io/HnylIxj.jpg" alt="Main Image">
+        </div>
+    </div>
+
+
+    <footer>
+        <p> My Website 2024.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
